@@ -56,7 +56,7 @@ await navigator.clipboard.writeText(fullcopyquotes);
 // speach out Functionality
 const readQuoteOut = document.querySelector(".bi-volume-up-fill");
 readQuoteOut.addEventListener("click", ()=>{
-alert("reading text")
+// alert("reading text")
 const quoteText = document.getElementById('quoteText').textContent;
 const authorText = document.getElementById('author').textContent;
 
