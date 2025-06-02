@@ -35,7 +35,7 @@ body{
 }
 .quoteContainer{ 
     background-color: #fff;
-   max-width: 600px;
+   width: 600px;
     height: 450px;
     border-radius: 10px;
     padding: 20px;
