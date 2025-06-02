@@ -1,0 +1,134 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+}
+body{  
+     background-color: #4DA8DA;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.usersMessage{
+    background-color:#fff;
+    box-shadow: 3px 3px 3px 3px rgb(0, 0, 0);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+
+}
+.quoteContainer{ 
+    background-color: #fff;
+   max-width: 600px;
+    height: 450px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+#contentSection{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+.sideContent{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    align-items: center;
+}
+.sideContent img{
+width:200px;
+height: 100px;
+border-radius: 20px;
+display: none;
+}
+hr{
+    margin-top: 5px;
+}
+#functionalitySection{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+
+}
+.socialMediaSection{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
+}
+.buttonSection button{
+    padding: 8px 35px 8px 35px;
+    color: #fff;
+    font-weight: 900;
+    background-color:black ;
+    border: none;
+    border-radius:2px;
+    cursor: pointer;
+}
+.buttonSection button:hover{
+    background-color:#4DA8DA;
+}
+
+
+.bi-volume-up-fill{
+    font-size: 25px;
+}
+.bi-clipboard{
+    font-size: 25px;
+}
+.bi-clipboard:hover{
+    transform: scale(1.1, 1.1);
+   color: #4DA8DA;
+   font-weight: 900;
+}
+.fa-x-twitter{
+    font-size: 25px;
+}
+.fa-x-twitter:hover{
+ transform: scale(1.1, 1.1);
+   color: #4DA8DA;
+   font-weight: 900;
+}
+.bi-volume-up-fill:hover{
+     transform: scale(1.1, 1.1);
+   color: #4DA8DA;
+   font-weight: 900;
+}
+#author{
+    color: #4DA8DA;
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
+@media (max-width:768px){
+    .quoteContainer{
+        width: 350px;
+        height: 400px;
+    }
+}
