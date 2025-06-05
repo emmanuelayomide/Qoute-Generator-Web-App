@@ -36,7 +36,7 @@ body{
 .quoteContainer{ 
     background-color: #fff;
    width: 600px;
-    height: 450px;
+    height:auto;
     border-radius: 10px;
     padding: 20px;
     display: flex;
