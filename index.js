@@ -12,6 +12,25 @@ async function fetchQuoteInfo(){
     }
 }
 
+const twitterBtn = document.getElementById('twitterShare');
+
+function updateTwitterLink() {
+  const quote = document.getElementById('quoteText').textContent;
+  const author = document.getElementById('author').textContent;
+  const fullQuote = `${quote} - ${author}`;
+  
+  // Encode for URL
+  const tweetText = encodeURIComponent(fullQuote);
+  
+  // Set href to share on Twitter
+  twitterBtn.href = `https://twitter.com/intent/tweet?text=${tweetText}`;
+}
+
+// Call this whenever the quote changes
+
+
+
+
 async function fetchQuote(){
     const menu = await fetchQuoteInfo();
 const quoteText = document.getElementById('quoteText');
@@ -19,6 +38,8 @@ const author = document.getElementById('author');
 if(menu){
 quoteText.textContent = menu.quote;
 author.textContent = menu.author;
+
+updateTwitterLink();
 }
     else{
         quoteText.textContent = "Never Give up because you never Know if the next try is going to be the one that works";
@@ -75,22 +96,7 @@ voice.onend = () => {
 })
 
 // sharing post on twitter X as the new company name
-const twitterBtn = document.getElementById('twitterShare');
 
-function updateTwitterLink() {
-  const quote = document.getElementById('quoteText').textContent;
-  const author = document.getElementById('author').textContent;
-  const fullQuote = `${quote} - ${author}`;
-  
-  // Encode for URL
-  const tweetText = encodeURIComponent(fullQuote);
-  
-  // Set href to share on Twitter
-  twitterBtn.href = `https://twitter.com/intent/tweet?text=${tweetText}`;
-}
-
-// Call this whenever the quote changes
-updateTwitterLink();
 
 
 
