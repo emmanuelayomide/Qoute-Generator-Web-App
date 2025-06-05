@@ -3,7 +3,7 @@
 // getting the code from Api...i make use of public Api
 async function fetchQuoteInfo(){
     try{
-        const response = await axios.get('https://api.quotable.io/random');
+        const response = await axios.get('https://dummyjson.com/quotes/random');
         console.log(response.data);
         return response.data;
     }catch (error) {
@@ -17,7 +17,7 @@ async function fetchQuote(){
 const quoteText = document.getElementById('quoteText');
 const author = document.getElementById('author');
 if(menu){
-quoteText.textContent = menu.content;
+quoteText.textContent = menu.quote;
 author.textContent = menu.author;
 }
     else{
