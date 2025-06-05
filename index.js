@@ -36,7 +36,7 @@ async function fetchQuote(){
 const quoteText = document.getElementById('quoteText');
 const author = document.getElementById('author');
 if(menu){
-quoteText.textContent = menu.quote;
+quoteText.textContent = `"${menu.quote}"`;
 author.textContent = menu.author;
 
 updateTwitterLink();
